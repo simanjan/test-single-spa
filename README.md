@@ -59,3 +59,17 @@ https://storage.googleapis.com/react.microfrontends.app/importmap.json
 
 domElement or domElementGetter
 https://single-spa.js.org/docs/ecosystem-react/
+
+## issue with hooks
+
+Issue was due to multiple react loaded
+2nd react has been loaded from antd / components
+Added webpack rule to exclude react, react-dom and antd: https://webpack.js.org/configuration/externals/
+!!! There is an issue with react-dom - returned back
+react and antd are ok, antd required to include moment.js
+Changes are in root-config
+antd guideline: https://ant.design/docs/react/introduce#Import-in-Browser
+
+TODO: fix issues with react-dom - fixed:
+
+`externals: { 'react': 'react', 'react-dom': 'react-dom', 'antd': 'antd' }`
