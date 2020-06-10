@@ -36,6 +36,8 @@
 
   <!-- Add your organization's prod import map URL to this script's src  -->
   <!-- <script type="systemjs-importmap" src="/importmap.json"></script> -->
+<!--  "moment": "https://cdn.jsdelivr.net/npm/moment@2.26.0/moment.js",-->
+<!--  "antd": "https://cdn.jsdelivr.net/npm/antd@4.2.3/dist/antd.js",-->
 
   <% if (isLocal) { %>
     <script type="systemjs-importmap">
@@ -43,12 +45,11 @@
       "imports": {
         "react": "https://cdn.jsdelivr.net/npm/react@16.13.1/umd/react.development.js",
         "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@16.13.1/umd/react-dom.development.js",
-        "moment": "https://cdn.jsdelivr.net/npm/moment@2.26.0/moment.js",
-        "antd": "https://cdn.jsdelivr.net/npm/antd@4.2.3/dist/antd.js",
         "@extrascript/root-config": "//localhost:9000/extrascript-root-config.js",
         "@extrascript/components": "//localhost:9001/extrascript-components.js",
         "@extrascript/navigation": "//localhost:8501/extrascript-navigation.js",
-        "@extrascript/auth": "//localhost:8500/extrascript-auth.js"
+        "@extrascript/auth": "//localhost:8500/extrascript-auth.js",
+        "@extrascript/calendar": "//localhost:8502/extrascript-calendar.js"
       }
     }
   </script>
@@ -58,17 +59,18 @@
   <script src="https://cdn.jsdelivr.net/npm/systemjs@6.3.1/dist/extras/amd.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/systemjs@6.3.1/dist/extras/named-exports.js"></script>
   <% } else { %>
+<!--    "moment": "https://cdn.jsdelivr.net/npm/moment@2.26.0/moment.min.js",-->
+<!--    "antd": "https://cdn.jsdelivr.net/npm/antd@4.2.3/dist/antd.min.js",-->
     <script type="systemjs-importmap">
     {
       "imports": {
         "react": "https://cdn.jsdelivr.net/npm/react@16.13.1/umd/react.production.min.js",
         "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@16.13.1/umd/react-dom.production.min.js",
-        "moment": "https://cdn.jsdelivr.net/npm/moment@2.26.0/moment.min.js",
-        "antd": "https://cdn.jsdelivr.net/npm/antd@4.2.3/dist/antd.min.js",
         "@extrascript/root-config": "//localhost:9000/extrascript-root-config.js",
         "@extrascript/components": "//localhost:9001/extrascript-components.js",
         "@extrascript/navigation": "//localhost:8501/extrascript-navigation.js",
-        "@extrascript/auth": "//localhost:8500/extrascript-auth.js"
+        "@extrascript/auth": "//localhost:8500/extrascript-auth.js",
+        "@extrascript/calendar": "//localhost:8502/extrascript-calendar.js"
       }
     }
   </script>

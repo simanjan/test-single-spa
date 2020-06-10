@@ -73,3 +73,14 @@ antd guideline: https://ant.design/docs/react/introduce#Import-in-Browser
 TODO: fix issues with react-dom - fixed:
 
 `externals: { 'react': 'react', 'react-dom': 'react-dom', 'antd': 'antd' }`
+
+## May 27
+
+antd moved back to @extrascript/components
+Created calendar application
+Added Login form on Home
+Fixed header styling: added logo styles, menu, search bar, user dropdown
+Moved footer to bottom
+
+TODO: antd/icons
+TODO: fix error preventing commit navigation
