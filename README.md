@@ -1,6 +1,16 @@
 # test-single-spa
 
-Trying Single SPA Framework
+Trying Single SPA Framework w/ Ant Design
+
+## Ant Design Examples
+
+- https://github.com/ant-design/pro-blocks
+- https://preview.pro.ant.design/dashboard/monitor
+
+## Single SPA Examples
+
+- https://github.com/react-microfrontends
+- https://react.microfrontends.app/
 
 # action log
 
@@ -84,3 +94,4 @@ Moved footer to bottom
 
 TODO: antd/icons
 TODO: fix error preventing commit navigation
+TODO: configure dotenv/PORT from file
